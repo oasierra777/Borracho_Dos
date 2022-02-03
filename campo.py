@@ -9,7 +9,6 @@ class Campo:
         delta_x, delta_y = borracho.camina()
         coordenada_actual = self.coordenadas_de_borrachos[borracho]
         nueva_coordenada = coordenada_actual.mover(delta_x, delta_y)
-        
         self.coordenadas_de_borrachos[borracho] = nueva_coordenada
         
     def obtener_coordenadas(self, borracho):
