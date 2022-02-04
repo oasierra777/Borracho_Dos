@@ -34,6 +34,7 @@ def simular_caminata(pasos, numero_de_intentos, tipo_de_borracho):
     for i in range(numero_de_intentos):
         borracho.append(tipo_de_borracho(nombre=f'Kike {i}'))
         simulacion_caminata = caminata(borracho[i], pasos, tipo_de_borracho)
+        print(simulacion_caminata)
         distancias.append(round(simulacion_caminata, 1))
     return distancias
     
