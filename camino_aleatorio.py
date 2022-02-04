@@ -34,9 +34,7 @@ def simular_caminata(pasos, numero_de_intentos, tipo_de_borracho):
     for i in range(numero_de_intentos):
         borracho.append(tipo_de_borracho(nombre=f'Kike {i}'))
         simulacion_caminata = caminata(borracho[i], pasos, tipo_de_borracho)
-        print(simulacion_caminata)
         distancias.append(round(simulacion_caminata, 1))
-    print("diatancias",distancias)
     return distancias
     
 def graficar_pasos(x_graph, y_graph, tipo, pasos):
@@ -66,8 +64,8 @@ def main(distancias_de_caminata, numero_de_intentos, tipo_de_borracho):
     
 if __name__ == '__main__':
     distancias_de_caminata = [100000]
-    numero_de_intentos = 1
+    numero_de_intentos = 3
     
     main(distancias_de_caminata, numero_de_intentos, BorrachoTradicional)
-    main(distancias_de_caminata, numero_de_intentos, BorrachoMuyModerado)
-    main(distancias_de_caminata, numero_de_intentos, BorrachoDerecha)
+    # main(distancias_de_caminata, numero_de_intentos, BorrachoMuyModerado)
+    # main(distancias_de_caminata, numero_de_intentos, BorrachoDerecha)
